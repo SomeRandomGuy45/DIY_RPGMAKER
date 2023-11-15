@@ -14,10 +14,6 @@ using namespace std;
 
 void ChooseClass(string RPGName, string Weapon1, string Weapon2, string Weapon3, string Weapon4, int attack1, int attack2, int attack3, int attack4)
 {
-    /*
-        TODO:
-        Make this code work so I don't have to write crap
-    */
     int input;
     cout << "Hello welcome to " << RPGName << " lets get you setup before we start the game!\n";
     cout << "What weapon would you like?\n"
