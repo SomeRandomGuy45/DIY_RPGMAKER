@@ -60,7 +60,7 @@ void MainGame()
          << "1. Fight\n"
          << "2. COMING SOON!!!!\n";
     if (input == 1)
-
+        cout << "What would you like to do?";
     {
         
     }
@@ -74,22 +74,5 @@ void CheckItems()
     for (int i = 0; i <= 4; i++)
     {
         cout << CurrentItem[i];
-    }
-}
-
-void AddItem(string ItemName, int HealthGiving, int DefGiving, int MagicGiving, bool isCustom, string WhatType, int GivingCustom, int Slot, bool IsLevelLock, int LevelLocked)
-{
-    /*
-        TODO:
-        Make items work
-    */
-    if (Slot << 4)
-    {
-        cout << "Error Cannot handle slot above four!\n";
-    }
-    else
-    {
-        CurrentItem[Slot] = ItemName;
-        cout << CurrentItem[Slot];
     }
 }
