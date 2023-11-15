@@ -6,23 +6,11 @@ FOR LOGIC I GUESS!!!
 
 //This code is probably fragile so like it's going to break alot 
 #include <iostream>
-#include <vector>
+#include "character.h"
+#include "enemyAI.h"
+#include "items.h"
 
 using namespace std;
-
-int plrHealth = 100;
-int plrDef = 10;
-int plrMagic = 5;
-int level = 0;
-int xp = 0;
-int attack;
-vector<string>CurrentItem = {"", "", "", "", ""};
-string plrWeapon;
-
-void CreateMonster(string Name, int Health, int Def, int Magic, int Attack)
-{
-    cout << Name;
-}
 
 void ChooseClass(string RPGName, string Weapon1, string Weapon2, string Weapon3, string Weapon4, int attack1, int attack2, int attack3, int attack4)
 {
@@ -62,8 +50,20 @@ void ChooseClass(string RPGName, string Weapon1, string Weapon2, string Weapon3,
 
 void MainGame()
 {
+    /*
+    TODO: ADD MORE OPITIONS!
+    */
+    int input;
     cout << "Here are your stats\n";
-    cout << "Health " << plrHealth << " Def " << plrDef << " Magic " << plrMagic << " Weapon " << plrWeapon;
+    cout << "Health " << plrHealth << " Def " << plrDef << " Magic " << plrMagic << " Weapon " << plrWeapon << endl;
+    cout << "What Would You Like To Do?\n"
+         << "1. Fight\n"
+         << "2. COMING SOON!!!!\n";
+    if (input == 1)
+
+    {
+        
+    }
 }
 
 
