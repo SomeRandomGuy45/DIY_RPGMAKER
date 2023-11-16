@@ -60,7 +60,7 @@ void MainGame()
          << "1. Fight\n"
          << "2. COMING SOON!!!!\n";
     if (input == 1)
-        cout << "What would you like to do?";
+        cout << "What would you like to do?\n";
     {
         
     }
