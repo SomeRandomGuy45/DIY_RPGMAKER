@@ -3,7 +3,6 @@ THIS IS THE SETTINGS OF THE ENEMIES!
 */
 
 #include <iostream>
-#include "character.h"
 
 using namespace std;
 
