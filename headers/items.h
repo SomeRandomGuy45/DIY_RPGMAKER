@@ -1,5 +1,5 @@
 #include <iostream>
-#include<array>
+#include <array>
 #include "random.h"
 
 using namespace std;
@@ -11,7 +11,7 @@ int MAX = 5;
 class Item
 {
 public:
-    string Name;
+    string Name = "YOUR NAME";
     int healthGiving = 100;
     int defGiving = 10;
     int magicGiving = 2;
