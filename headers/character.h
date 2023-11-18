@@ -5,7 +5,6 @@ We store this in here why? Idk it's more easy to edit it.
 */
 
 #include <iostream>
-#include "random.h"
 
 using namespace std;
 

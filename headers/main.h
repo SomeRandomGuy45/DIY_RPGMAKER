@@ -9,7 +9,6 @@ FOR LOGIC I GUESS!!!
 #include "character.h"
 #include "enemyAI.h"
 #include "items.h"
-#include "random.h"
 
 #if defined(__linux__)
     #include <unistd.h>

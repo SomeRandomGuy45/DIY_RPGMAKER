@@ -1,8 +1,12 @@
 #include <iostream>
 #include <array>
-#include "random.h"
 
 using namespace std;
+
+int randomInt(int start, int range)
+{
+    return (start + rand() % range);
+}
 
 string CurrentItem[] = {"", "", "", "", ""};
 
@@ -56,7 +60,8 @@ void AddItem()
         
         if (CurrentItem[i] == "")
         {
-            randomInt(0, x);
+            int newThing = randomInt(0, x);
+            cout << newThing;
             break;
         }
     }
