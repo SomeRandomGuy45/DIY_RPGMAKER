@@ -5,7 +5,7 @@ We store this in here why? Idk it's more easy to edit it.
 */
 
 #include <iostream>
-#include <vector>
+#include "random.h"
 
 using namespace std;
 
@@ -15,5 +15,4 @@ int plrMagic = 5;
 int level = 0;
 int xp = 0;
 int attack;
-vector<string>CurrentItem = {"", "", "", "", ""};
 string plrWeapon;

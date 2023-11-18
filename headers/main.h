@@ -9,6 +9,17 @@ FOR LOGIC I GUESS!!!
 #include "character.h"
 #include "enemyAI.h"
 #include "items.h"
+#include "random.h"
+
+#if defined(__linux__)
+    #include <unistd.h>
+    #include <stdlib.h>
+#elif _WIN32
+    #include <Windows.h>
+#elif __APPLE__
+    #include <unistd.h>
+    #include <stdlib.h>
+#endif
 
 using namespace std;
 
@@ -42,6 +53,13 @@ void ChooseClass(string RPGName, string Weapon1, string Weapon2, string Weapon3,
         plrWeapon = Weapon4;
         attack = attack4;
     }
+    #if defined(__linux__)
+        system("clr");
+    #elif _WIN32
+        system("cls");
+    #elif __APPLE__
+        system("clr");
+    #endif
 }
 
 void MainGame()
@@ -49,26 +67,26 @@ void MainGame()
     /*
     TODO: ADD MORE OPITIONS!
     */
-    int input;
+    int input2;
     cout << "Here are your stats\n";
     cout << "Health " << plrHealth << " Def " << plrDef << " Magic " << plrMagic << " Weapon " << plrWeapon << endl;
     cout << "What Would You Like To Do?\n"
          << "1. Fight\n"
          << "2. COMING SOON!!!!\n";
-    if (input == 1)
-        cout << "What would you like to do?\n";
+    cin >> input2;
+    #if defined(__linux__)
+        system("clr");
+    #elif _WIN32
+        system("cls");
+    #elif __APPLE__
+        system("clr");
+    #endif
+    if (input2 == 1)
     {
-        
-    }
-}
-
-
-void CheckItems()
-{
-    //This loop is to check if we have anyitems
-    //Note we do have to print it out!
-    for (int i = 0; i <= 4; i++)
-    {
-        cout << CurrentItem[i];
+        int input3;
+        cout << "A Monster Appears!\n";
+        cout << "1. Fight\n2. Item\n";
+        cin >> input3;
+        AddItem();
     }
 }

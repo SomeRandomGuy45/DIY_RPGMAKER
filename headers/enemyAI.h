@@ -3,7 +3,6 @@ THIS IS THE SETTINGS OF THE ENEMIES!
 */
 
 #include <iostream>
-#include "character.h"
 
 using namespace std;
 
@@ -29,13 +28,29 @@ public:
     int def = 0;
     int attack = 5;
     int givingXp = 10;
-    bool LevelLocked = false;
     int levelSpawn = 0;
+    bool LevelLocked = false;
+    bool isDeafult = false;
 };
 
-3. Passing it to main
+3. Passing it to the function
 
 */
+
+std::string CurrentMonster = "Default";
+
+class Default
+{
+public:
+    string name = "Monster";
+    int health = 25;
+    int def = 0;
+    int attack = 5;
+    int givingXp = 5;
+    int levelSpawn = 0;
+    bool LevelLocked = false;
+    bool isDefault = true;
+};
 
 class Monster1
 {
@@ -45,8 +60,27 @@ public:
     int def = 0;
     int attack = 5;
     int givingXp = 10;
-    //LevelLocked isn't used yet
-    bool LevelLocked = false;
     int levelSpawn = 0;
+    bool LevelLocked = false;
+    bool isDeafult = false;
 };
 
+void CheckMonster()
+{
+    Monster1 Monster1;
+    Default Default;
+    if (Monster1.LevelLocked == true && Monster1.levelSpawn != 0)
+    {
+        //Since this is true we need to check if we are the right level!
+        if (Monster1.levelSpawn == level)
+        {
+            cout << "Can Spawn!";
+            CurrentMonster = Monster1.name;
+        }
+        else if (Monster1.levelSpawn > level)
+        {
+            cout << "Spawning Default";
+            CurrentMonster = "Default";
+        }
+    }
+}
