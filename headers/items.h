@@ -7,11 +7,25 @@ using namespace std;
 string CurrentItem[] = {"", "", "", "", ""};
 
 int MAX = 5;
+/*
+USE THIS!
+class Item
+{
+public:
+    string Name = "NAME";
+    int healthGiving = 100;
+    int defGiving = 10;
+    int magicGiving = 2;
+    bool GiveCustom = false;
+    string CustomGiving;
+    int GivingCustom = 0;
+};
+*/
 
 class Item
 {
 public:
-    string Name = "YOUR NAME";
+    string Name = "NAME";
     int healthGiving = 100;
     int defGiving = 10;
     int magicGiving = 2;
