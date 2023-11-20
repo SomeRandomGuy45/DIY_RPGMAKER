@@ -53,15 +53,15 @@ void ChooseClass(string RPGName, string Weapon1, string Weapon2, string Weapon3,
         attack = attack4;
     }
     #if defined(__linux__)
-        system("clr");
+        system("clear");
     #elif _WIN32
         system("cls");
     #elif __APPLE__
-        system("clr");
+        system("clear");
     #endif
 }
 
-void MainGame()
+void MainGame(string AttackName1, string AttackName2, string AttackName3)
 {
     /*
     TODO: ADD MORE OPITIONS!
@@ -74,11 +74,11 @@ void MainGame()
          << "2. COMING SOON!!!!\n";
     cin >> input2;
     #if defined(__linux__)
-        system("clr");
+        system("clear");
     #elif _WIN32
         system("cls");
     #elif __APPLE__
-        system("clr");
+        system("clear");
     #endif
     if (input2 == 1)
     {
@@ -86,6 +86,16 @@ void MainGame()
         cout << "A Monster Appears!\n";
         cout << "1. Fight\n2. Item\n";
         cin >> input3;
-        AddItem();
+        if (input3 == 1)
+        {
+            CheckMonster();
+            int input;
+            cout 
+                << "Its your turn what is you attack?\n"
+                << "1. " + AttackName1 << endl
+                << "2. " + AttackName2 << endl
+                << "3. " + AttackName3 << endl;
+            cin >> input;
+        }
     }
 }

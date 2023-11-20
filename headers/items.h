@@ -40,9 +40,9 @@ public:
 
 void CheckItems()
 {
-    for (int i = 0; i <= 4; i++)
+    for (int i = 0; i < 5; i++)
     {
-        cout << CurrentItem[i];
+        cout << CurrentItem[i] << endl;
     }
 }
 
@@ -54,14 +54,15 @@ void AddItem()
     //Insert your item here!
     string Items[] = {item1.Name, item2.Name};
     //How Many Items we have
-    int x = end(Items)-begin(Items);
-    for (int i = 0; i <= 4; i++)
+    //Change it to how many items you have!
+    int x = 2;
+    for (int i = 0; i < 5; i++)
     {
         
         if (CurrentItem[i] == "")
         {
             int newThing = randomInt(0, x);
-            cout << newThing;
+            CurrentItem[i] = Items[newThing];
             break;
         }
     }

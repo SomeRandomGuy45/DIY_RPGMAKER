@@ -8,6 +8,6 @@ int main()
     //AddItem("Test", 5, 5, 5, false, "", 0, 0, false, 0);
     CheckItems();
     ChooseClass("Test", "Test1", "Test2", "Test3", "Test4", 10, 1, 349, 5);
-    MainGame();
+    MainGame("Hacker", "Man", "Cool");
     return 0;
 }

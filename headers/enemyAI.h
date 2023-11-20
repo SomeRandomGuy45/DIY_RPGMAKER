@@ -60,8 +60,8 @@ public:
     int def = 0;
     int attack = 5;
     int givingXp = 10;
-    int levelSpawn = 0;
-    bool LevelLocked = false;
+    int levelSpawn = 2;
+    bool LevelLocked = true;
     bool isDeafult = false;
 };
 
@@ -74,13 +74,15 @@ void CheckMonster()
         //Since this is true we need to check if we are the right level!
         if (Monster1.levelSpawn == level)
         {
-            cout << "Can Spawn!";
             CurrentMonster = Monster1.name;
         }
-        else if (Monster1.levelSpawn > level)
+        else if (Monster1.levelSpawn > level || Monster1.levelSpawn < level)
         {
-            cout << "Spawning Default";
             CurrentMonster = "Default";
         }
+    }
+    else 
+    {
+        CurrentMonster = "Default";
     }
 }
