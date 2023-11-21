@@ -42,7 +42,7 @@ void CheckItems()
 {
     for (int i = 0; i < 5; i++)
     {
-        cout << CurrentItem[i] << endl;
+        cout << CurrentItem[i] << "\n";
     }
 }
 
@@ -55,7 +55,7 @@ void AddItem()
     string Items[] = {item1.Name, item2.Name};
     //How Many Items we have
     //Change it to how many items you have!
-    int x = 2;
+    int x = 1;
     for (int i = 0; i < 5; i++)
     {
         

@@ -65,7 +65,7 @@ public:
     bool isDeafult = false;
 };
 
-void CheckMonster()
+string CheckMonster()
 {
     Monster1 Monster1;
     Default Default;
@@ -85,4 +85,5 @@ void CheckMonster()
     {
         CurrentMonster = "Default";
     }
+    return CurrentMonster;
 }
