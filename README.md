@@ -1,3 +1,9 @@
 # TerminalBaseRPG_Maker
 
-Hey so this is a side project that I'm working on and it can do a lot of stuff which is cool lol :D
+THIS IS V2.0
+
+NOTE: STUFF WOULDN'T START YET!!!!
+
+V2.0 Add List
+1: Gui
+2: Able to create a 2d game!
